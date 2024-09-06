@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+	background-color: #a78686;
 }
 
 .slider {
@@ -50,6 +51,8 @@ body {
   width: 100%;
   height: 10%;
   box-sizing: border-box;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .slide-name {
@@ -80,7 +83,6 @@ body {
 
 .radio-buttons label {
 	cursor: pointer;
-	border: 1px solid black;
 	width: 2.4rem;
 	height: 2.4rem;
 	display: flex;
@@ -157,8 +159,18 @@ input[type="radio"]:checked + .radio-buttons div {
 }
 
 
-@media (max-width: 768px) {
-  .slide p {
-    font-size: 1rem;
-  }
+@media (max-width: 640px) {
+	.slide-name p {
+		font-size: 0.9rem;
+	}
+
+	.radio-buttons label {
+		width: 2rem;
+		height: 2rem;
+	}
+	
+	.radio-buttons div {
+		width: 0.6rem;
+		height: 0.6rem;
+	}
 }

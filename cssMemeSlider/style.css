@@ -174,3 +174,20 @@ input[type="radio"]:checked + .radio-buttons div {
 		height: 0.6rem;
 	}
 }
+
+@media (max-width: 540px) {
+  .bottom-panel {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .radio-buttons {
+    margin: auto;
+  }
+
+  .slide-name {
+    margin-right: auto;
+  }
+}
